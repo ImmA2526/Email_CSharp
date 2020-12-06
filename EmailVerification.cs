@@ -7,7 +7,7 @@ namespace Email
 {
     class EmailVerification
     {
-        public static string EmailID = "^[a-zA-Z0-9]+[.(a-zA-Z0-9)]*(\\@)[a-zA-Z0-9]+(\\.)[a-z]{2,4}$";
+        public static string EmailID = "^[a-zA-Z0-9]+[.(a-zA-Z0-9+-_.)]*(\\@)[a-zA-Z0-9]+(\\.)[a-z]{2,4}$";
         public bool Emails(string Email)
         {
             Regex Em = new Regex(EmailID);
